@@ -7,7 +7,7 @@ const app = express()
 app.use(express.static('client'))
 
 app.get('/', () => {
-    resizeBy.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../index.html'))
 })
 
 const port = process.env.PORT || 4040
