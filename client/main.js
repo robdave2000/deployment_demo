@@ -1,7 +1,8 @@
 console.log("connected to main.js")
 
 let imgTag = document.querySelector('img')
+let video = document.querySelector('#embed-video')
 
-imgTag.addEventListener('mouseover', () => {
-    alert('you didnt like how handsome i am?')
+imgTag.addEventListener('click', () => {
+    video.styles.display = 'block'
 })
