@@ -12,4 +12,4 @@ app.get('/', () => {
 
 const port = process.env.PORT || 4040
 
-app.listen(4040, () => console.log(`Server running on ${port}`))
+app.listen(port, () => console.log(`Server running on ${port}`))
